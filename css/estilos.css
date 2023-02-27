@@ -1,0 +1,183 @@
+@font-face {
+    font-family: "Montserrat" ;
+    src: url("../assets/fonts/static/Montserrat-Regular.ttf");
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+font-family: "Montserrat Regular";
+}
+
+/*
+.paleta de colores
+#E4FDE1  blanco azulado
+#8ACB88 pistacho verde
+#648381 verde azulado
+#575761 gris azulado
+#FFBF46 naranja
+
+
+*/
+
+body{
+    background-color:#E4FDE1;
+}
+.encabezado{
+    background: #575761;
+    background: linear-gradient(50deg,#575761 30%, #648381 80%);
+    background: -webkit-linear-gradient(50deg,#575761 30%, #648381 80%);
+    background: -moz-linear-gradient(50deg,#575761 30%, #648381 80%);
+    display: flex;
+    justify-content: center;
+}
+
+.encabezado_logo{
+    width: 100%;
+    margin: 0px auto;
+    justify-content: center;
+}
+
+.navegador{
+    margin: 0px auto;
+}
+
+.navegador , ul, li {
+    list-style: none;
+    margin: 0; 
+    padding: 0;
+    display: inline-block;
+    align-items: center;
+}
+
+.navegador_toggler{
+    display: flex;
+    justify-content: center;
+}
+
+.linkNav {
+    color:#E4FDE1 !important; 
+    text-decoration:none ;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 10px;
+    background-color: rgba(218, 116, 15, 0);
+ }
+
+ .linkNav:hover{
+    color: #575761 !important; 
+    border-radius: 5px;
+    background-color: #8ACB88;
+}
+
+/**FOOTER**/
+.LogoFooter{
+    border-image: none;
+    margin: 0px auto;
+    width: 75%;
+}
+.PieDePagina{
+    background: #575761;
+    background: linear-gradient(50deg,#575761 30%, #648381 80%);
+    background: -webkit-linear-gradient(50deg,#575761 30%, #648381 80%);
+    background: -moz-linear-gradient(50deg,#575761 30%, #648381 80%);
+    align-self: flex-end;
+    }
+
+.redesSociales{
+    font-size: 0.8em;    
+    text-align: center;
+    color: #E4FDE1;
+}
+
+.ancla{
+    text-decoration: none;
+    margin: 5px;
+}
+
+.iconoRedes{
+    text-decoration: none !important;
+    font-size: 1.2rem;
+    color: #8ACB88;
+    display: inline-block;
+    }
+
+.nopadding{
+    padding: 0px !important;
+    margin: 5px !important;
+}
+
+/*Datos personales*/ 
+
+
+ .título{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+ }
+
+ .subtitulo{
+    text-align: justify;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+ .imagen{
+    width: 75%;
+    padding: 10px;
+    margin: 0px auto;
+    background-color: #fafafa;
+    border-radius: 2%;
+    display: inline-block;
+    border-color: #648381;
+    box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.49);
+    -webkit-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.49);
+    -moz-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.49);   
+    justify-content: center;
+ }
+ 
+ .contenedortexto{
+    width: 75%;
+    margin: 0px auto;
+    padding: 0px auto;
+    justify-content: center;
+    text-align: justify ;
+ }
+
+ .contenedortextoexperiencia{
+    width: 90%;
+    margin: 0px auto;
+    padding: 0px auto;
+    justify-content: center;
+    text-align: justify
+ }
+
+.lista{
+    list-style: circle;
+    padding-left: 5px;
+}
+/*MEDIA QUERIE para Escritorio*/
+
+@media (min-width:769px) {
+    /*header*/
+    .encabezado {
+        position: sticky;
+        top: 0px;
+        z-index: 5;
+    }
+
+    .encabezado_logo{
+        width: 60%;
+}
+
+    .linkNav {
+        font-size: 1.5em;
+  }
+
+  .LogoFooter{
+    border-image: none;
+    margin: 0px auto;
+    width: 25%;
+}
+ }
